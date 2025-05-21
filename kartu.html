@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kartu Identitas Peserta JKN (Microchip)</title>
+    <style>
+        body {
+            background: #eee;
+        }
+        .card-jkn {
+            width: 350px;
+            height: 220px;
+            background: #fff;
+            border: 2px solid #b3c2d0;
+            border-radius: 10px;
+            box-shadow: 0 2px 11px #0002;
+            margin: 30px auto;
+            padding: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            position: relative;
+            overflow: hidden;
+        }
+        .jkn-header {
+            background: #cce6ff;
+            border-bottom: 2px solid #3972b0;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            padding: 0 8px 0 10px;
+        }
+        .eid-label {
+            color: #d13a7a;
+            font-size: 1.02em;
+            font-weight: 600;
+            margin-right: 8px;
+            letter-spacing: 1px;
+        }
+        .jkn-logos {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            gap: 2px;
+        }
+        .jkn-logo-bpjs {
+            height: 19px;
+            margin-right: 4px;
+        }
+        .jkn-logo-jkn {
+            height: 19px;
+            margin-right: 2px;
+        }
+        .jkn-text {
+            font-size: 1em;
+            color: #37a34a;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+        .flag-id {
+            width: 23px;
+            height: 14px;
+            border: 1.1px solid #aaa;
+            margin-left: 10px;
+            border-radius: 1.2px;
+            overflow: hidden;
+            display: inline-block;
+        }
+        .flag-id .red {
+            background:#e33;width:100%;height:50%;display:block
+        }
+        .flag-id .white {
+            background:#fff;width:100%;height:50%;display:block
+        }
+        .green-strip {
+            background: #36b47e;
+            color: #fff;
+            font-size: 0.93em;
+            letter-spacing: 0.8px;
+            font-weight: 500;
+            padding: 3px 10px 2px 10px;
+            margin-top: 0;
+        }
+        .blue-strip {
+            background: #3e5889;
+            height: 11px;
+            margin-bottom: 3px;
+            margin-top: 1.5px;
+        }
+        .no-peserta {
+            text-align: center;
+            font-size: 1.20em;
+            font-weight: bold;
+            letter-spacing: 2.2px;
+            margin: 8px 0 0 0;
+        }
+        .nama-peserta {
+            text-align: center;
+            font-size: 1.05em;
+            font-weight: 600;
+            margin: 0 0 7px 0;
+            letter-spacing: 1px;
+        }
+        .detail-table {
+            margin: 0 12px;
+            font-size: 0.96em;
+            margin-top: 3px;
+            margin-bottom: 5px;
+            width: 94%;
+        }
+        .detail-table td {
+            padding: 1.5px 3px;
+        }
+        .barcode {
+            width: 76%;
+            margin: 5px auto 0 auto;
+            display: block;
+            height: 28px;
+            background: repeating-linear-gradient(90deg, #2c2c2c 0 2px, #fff 2px 5px);
+            border-radius: 2px;
+        }
+        .tgl-cetak {
+            text-align: center;
+            font-size: 0.94em;
+            color: #444;
+            margin: 2px 0 0 0;
+            letter-spacing: 1px;
+        }
+        /* Untuk meniru font bold signature/kode bawah */
+        .kode {
+            position: absolute;
+            left: 18px;
+            bottom: 8px;
+            font-size: 1.15em;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            color: #222;
+            opacity: 0.74;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+<div class="card-jkn">
+    <div class="jkn-header">
+        <span class="eid-label">e-ID</span>
+        <div class="jkn-logos">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/df/BPJS_Kesehatan_logo_2021.svg" class="jkn-logo-bpjs" alt="BPJS Logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Logo_BPJS_Kesehatan.svg" class="jkn-logo-jkn" alt="JKN Logo">
+            <span class="jkn-text">Jkn</span>
+        </div>
+        <span style="flex:1"></span>
+        <span class="flag-id">
+            <span class="red"></span>
+            <span class="white"></span>
+        </span>
+    </div>
+    <div class="green-strip">
+        KARTU IDENTITAS PESERTA
+    </div>
+    <div class="blue-strip"></div>
+    <div class="no-peserta">0001634969373</div>
+    <div class="nama-peserta">BENNI MANGATUR SITOMPUL</div>
+    <table class="detail-table">
+        <tr>
+            <td>Tanggal lahir</td><td>:</td><td>11-05-1967</td>
+        </tr>
+        <tr>
+            <td>NIK</td><td>:</td><td>1403091105670004</td>
+        </tr>
+        <tr>
+            <td>Faskes Tingkat I</td><td>:</td><td>PKM DURI KOTA</td>
+        </tr>
+        <tr>
+            <td>Kelas Rawat</td><td>:</td><td>I (SATU)</td>
+        </tr>
+    </table>
+    <div class="barcode"></div>
+    <div class="tgl-cetak">08 07 2021</div>
+    <div class="kode"></div>
+    <img src="![image3](image3)" alt="contoh kartu jkn asli" style="display:none;">
+</div>
+</body>
+</html>
